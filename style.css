@@ -126,7 +126,7 @@ article pre {
 		order: -1;
 		margin-right: 1em;
 	    margin-top: 5.3em;}
-	.site-body main .post, .site-body .sidebar-widget > div , .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	.site-body main .post, .site-body .sidebar-widget > div , .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, div.comment-respond{
 		margin-bottom: 1em;
 	    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
 	    transition: 0.1s;
@@ -134,7 +134,13 @@ article pre {
 	.site-body main .post h2, .site-body aside .sidebar-widget h3{
 	    margin: 0;
 	    background: burlywood;}
-	.site-body main .post .details, .site-body main .post h2, .site-body aside .sidebar-widget h3, .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .site-body .sidebar-widget > div > *{
+	.site-body main .post .details,
+	.site-body main .post h2,
+	.site-body aside .sidebar-widget h3,
+	.woocommerce ul.products li.product,
+	.woocommerce-page ul.products li.product,
+	.site-body .sidebar-widget > div > *,
+	div.comment-respond > *{
 	    padding: 1em;}
 	
 
