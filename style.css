@@ -14,9 +14,7 @@
     MAIN
 \*------------------------------------*/
 /* global box-sizing */
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +26,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font: 300 13px/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
-  color: #9c27b0;
+  font: 300 13px/1.4 "Ubuntu", Helvetica, Arial, sans-serif;
+  color: #181E21;
   background: white; }
 
 /* clear */
@@ -49,10 +47,10 @@ img {
   vertical-align: bottom; }
 
 a {
-  color: #444;
+  color: #181E21;
   text-decoration: none; }
   a:hover {
-    color: rgba(156, 39, 176, 0.6); }
+    color: #6B8794; }
   a:focus {
     outline: 0; }
   a:hover, a:active {
@@ -72,7 +70,7 @@ textarea, input[type="search"], input[type="text"], input[type="password"], inpu
   width: 100%;
   border: none;
   margin-bottom: 1em;
-  box-shadow: 0px 1px 5px #9c27b0;
+  box-shadow: 0px 1px 5px #181E21;
   transition: 0.1s;
   border-radius: 0.3em; }
 
@@ -87,7 +85,13 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   padding: 1em;
   margin-top: 0.5em;
   font-size: 1.2em;
-  font-weight: bold; }
+  font-weight: bold;
+  background: #AAD5EB; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #181E21; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #181E21; }
 
 /*------------------------------------*\
     STRUCTURE
@@ -113,7 +117,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   width: 50%; }
 
 .nav {
-  background: rgba(156, 39, 176, 0.4);
+  background: #6B8794;
   margin: 0 0 1em; }
   .nav .menu {
     display: flex;
@@ -121,7 +125,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     padding-left: 0;
     justify-content: center; }
     .nav .menu .menu-item {
-      background: rgba(156, 39, 176, 0.2);
+      background: #85A7B8;
       padding: 1em; }
       .nav .menu .menu-item a {
         padding: 1em;
@@ -142,34 +146,18 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   .site-body aside .sidebar-widget h3,
   .site-body .comment-reply-title {
     margin: 0;
-    background: rgba(156, 39, 176, 0.2); }
-
-.site-body main .post,
-.site-body .sidebar-widget > div,
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product,
-div.comment-respond {
-  margin-bottom: 1em;
-  box-shadow: 0px 1px 5px #9c27b0;
-  transition: 0.1s;
-  border-radius: 0.3em; }
-
-.site-body main .post .details,
-.site-body main .post h2,
-.site-body aside .sidebar-widget h3,
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product,
-.site-body .sidebar-widget > div > *,
-div.comment-respond > * {
-  padding: 1em; }
+    background: #85A7B8; }
 
 .footer {
   display: flex;
-  background: rgba(156, 39, 176, 0.2);
+  background: #181E21;
   padding: 1em;
   clear: both;
   flex-wrap: wrap;
-  align-content: space-between; }
+  align-content: space-between;
+  color: white; }
+  .footer a {
+    color: #85A7B8; }
 
 .woocommerce ul.products, .woocommerce-page ul.products {
   display: flex;
@@ -182,23 +170,62 @@ div.comment-respond > * {
     margin: 0 0.5em 1em; }
     .woocommerce ul.products li.product:first-child, .woocommerce ul.products li.product:nth-child(5n), .woocommerce-page ul.products li.product:first-child, .woocommerce-page ul.products li.product:nth-child(5n) {
       margin-left: 0; }
-  .woocommerce ul.products:nth-child(4n), .woocommerce-page ul.products:nth-child(4n) {
-    margin-right: 0; }
-  .woocommerce ul.products .price, .woocommerce-page ul.products .price {
-    font: 'Ubuntu';
-    color: #9c27b0;
-    display: block;
-    font-weight: 400;
-    margin-bottom: .5em;
-    font-size: 1.5em; }
-  .woocommerce ul.products a, .woocommerce-page ul.products a {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column; }
-    .woocommerce ul.products a span.onsale, .woocommerce-page ul.products a span.onsale {
-      position: relative;
-      border-radius: 0;
+    .woocommerce ul.products li.product:nth-child(4n), .woocommerce-page ul.products li.product:nth-child(4n) {
+      margin-right: 0; }
+    .woocommerce ul.products li.product h2.woocommerce-loop-product__title, .woocommerce-page ul.products li.product h2.woocommerce-loop-product__title {
+      text-align: center;
       width: 100%; }
+    .woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price {
+      color: #181E21;
+      display: block;
+      font-weight: 400;
+      margin-bottom: .5em;
+      font-size: 1.5em;
+      margin-left: auto;
+      margin-right: auto; }
+      .woocommerce ul.products li.product .price ins, .woocommerce-page ul.products li.product .price ins {
+        text-decoration: none; }
+    .woocommerce ul.products li.product a, .woocommerce-page ul.products li.product a {
+      font: 300 13px/1.4 "Ubuntu", Helvetica, Arial, sans-serif; }
+      .woocommerce ul.products li.product a:first-child, .woocommerce-page ul.products li.product a:first-child {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column; }
+      .woocommerce ul.products li.product a.button, .woocommerce-page ul.products li.product a.button {
+        font-weight: bold;
+        background: #6B8794;
+        color: white; }
+      .woocommerce ul.products li.product a span.onsale, .woocommerce-page ul.products li.product a span.onsale {
+        position: relative;
+        border-radius: 0;
+        width: 100%;
+        background: #AAD5EB;
+        color: white;
+        font-size: 1.5em;
+        min-height: inherit;
+        margin-top: auto;
+        font-weight: bold;
+        height: 2em;
+        line-height: 1.8em; }
+
+.site-body main .post,
+.site-body .sidebar-widget > div,
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product,
+div.comment-respond {
+  margin-bottom: 1em;
+  box-shadow: 0px 1px 5px #181E21;
+  transition: 0.1s;
+  border-radius: 0.3em; }
+
+.site-body main .post .details,
+.site-body main .post h2,
+.site-body aside .sidebar-widget h3,
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product,
+.site-body .sidebar-widget > div > *,
+div.comment-respond > * {
+  padding: 1em; }
 
 /*------------------------------------*\
     PAGES
