@@ -188,9 +188,16 @@ button, html input[type="button"], input[type="reset"], input[type="submit"]{
 	.woocommerce ul.products li.product a span.onsale{
 		position: relative;
 		border-radius: 0;
-		width: 100%;
-
-	}
+		width: 100%;}
+.woocommerce ul.products li.product .price,
+.woocommerce-page ul.products li.product .price {
+    font: 'Ubuntu';
+    color: black;
+    display: block;
+    font-weight: 400;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
