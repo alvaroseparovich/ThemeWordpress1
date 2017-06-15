@@ -40,13 +40,20 @@
 						</a>
 					</div>
 					<!-- /logo -->
+			</header>
+			<!-- /header -->
 
+			<!-- /wrapper -->
+			</div>
 					<!-- nav -->
 					<nav class="nav" role="navigation">
+					<div class="wrapper">
+					
 						<?php html5blank_nav(); ?>
+					</div>
 					</nav>
 					<!-- /nav -->
 
-			</header>
-			<!-- /header -->
+					<!-- wrapper -->
+					<div class="wrapper">
 			<div class="site-body">
