@@ -30,7 +30,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
+	font:300 13px/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
 	color:#444;
 	background: white;
 }
@@ -41,36 +41,40 @@ body {
     display:table;
 }
 
-.clear:after {
-    clear:both;
-}
-.clear {
-    *zoom:1;
-}
+.clear:after {clear:both;}
+.clear {*zoom:1;}
 img {
 	max-width:100%;
-	vertical-align:bottom;
-}
+	vertical-align:bottom;}
 a {
 	color:#444;
-	text-decoration:none;
-}
-a:hover {
-	color:#444;
-}
-a:focus {
-	outline:0;
-}
+	text-decoration:none;}
+a:hover {color:#444;}
+a:focus {outline:0;}
 a:hover,
-a:active {
-	outline:0;
-}
+a:active {outline:0;}
 input:focus {
 	outline:0;
-	border:1px solid #04A4CC;
+	border:1px solid #04A4CC;}
+label{display: block;margin: 1em 0;}
+textarea , input[type="search"], input[type="text"], input[type="password"], input[type="email"]{
+    overflow: auto;
+    vertical-align: top;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
+    border-radius: 0.3em;
 }
-article pre {
-	white-space:normal;
+article pre {white-space:normal;}
+button, html input[type="button"], input[type="reset"], input[type="submit"]{
+    -webkit-appearance: button;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /*------------------------------------*\
@@ -119,7 +123,7 @@ article pre {
     		font-weight: bold;}
 .site-body{
 	display: flex;}
-	.site-body > main{
+	.site-body > main, .site-body > #container{
 		flex-basis: 80%}
 	.site-body > aside{
 		flex-basis: 20%;
@@ -131,7 +135,7 @@ article pre {
 	    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
 	    transition: 0.1s;
 	    border-radius: 0.3em;}
-	.site-body main .post h2, .site-body aside .sidebar-widget h3{
+	.site-body main .post h2, .site-body aside .sidebar-widget h3, .site-body .comment-reply-title{
 	    margin: 0;
 	    background: burlywood;}
 	.site-body main .post .details,
@@ -156,6 +160,7 @@ article pre {
     flex-wrap: wrap;
     align-content: space-between;
 }
+
 .woocommerce .products{
 	display: flex;
 	flex-wrap: wrap;}
