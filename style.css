@@ -30,7 +30,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font:300 11px/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
 	color:#444;
 }
 /* clear */
@@ -82,26 +82,61 @@ input:focus {
 }
 /* header */
 .header {
-
+	width: 100%;
+	min-height: 50px;
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
 /* logo */
 .logo {
-
+	text-align: center;
 }
 .logo-img {
 
 }
 /* nav */
 .nav {
+    background: #d6d6d6;}
+    .nav .menu{
+    	display: flex;
+    	list-style: none;
+    	padding-left: 0;
+    	justify-content: center;
+    	margin: 0;}
+    .nav .menu .menu-item{
+    	background: whitesmoke;
+    	padding:1em;}
+    	.nav .menu .menu-item a{
+    		padding:1em;}
+.site-body{
+	display: flex;}
+	.site-body > main{
+		flex-basis: 80%}
+	.site-body > aside{
+		flex-basis: 19%;
+		order: -1;}
+	.site-body main .post{
+		margin-bottom: 1em;
+	    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
+	    transition: 0.1s;
+	    padding: 1em;
+	    border-radius: 0.3em;
+	}
 
-}
 /* sidebar */
 .sidebar {
 
 }
 /* footer */
 .footer {
-
+	display: flex;
+    background: #d6d6d6;
+    padding: 1em;
+    clear: both;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 /*------------------------------------*\
